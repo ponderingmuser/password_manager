@@ -49,7 +49,7 @@ def add_password():
     pw = password_entry.get()
 
     if len(site) == 0 or len(pw) == 0:
-        messagebox.showerror(title="Oops!", message="Please don't leave any fields empty!")
+        messagebox.showerror(title="Oops!", message="Don't leave any fields empty!")
     else:
         is_ok = messagebox.askokcancel(title=site, message=f"These are what you entered: \n"
                                                            f"Email/Username: {user} \nPassword: {pw}\n"
